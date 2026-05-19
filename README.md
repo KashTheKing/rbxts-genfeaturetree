@@ -34,6 +34,10 @@ After install, your `package.json` will have:
 - `npm run build` — compiles TypeScript and regenerates `default.project.json`
 - `npm run watch` — watches for changes and keeps `default.project.json` in sync
 
+## Boilerplate
+
+A ready-to-use project template using this package is available at [rbxts-genfeaturetree-boilerplate](https://github.com/KashTheKing/rbxts-genfeaturetree-boilerplate).
+
 ## Init
 
 To scaffold a fresh project structure:
