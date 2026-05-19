@@ -1,0 +1,22 @@
+{
+  "name": "rbxts-genfeaturetree",
+  "version": "1.0.0",
+  "author": "KashTheKing",
+  "description": "Maps rojo default.project.json server/client scripts to a feature-tree from roblox-ts compiled output",
+  "main": "genFeatureTree.js",
+  "scripts": {
+    "postinstall": "node setup.js",
+    "build": "rbxtsc && node node_modules/rbxts-genfeaturetree/genFeatureTree.js",
+    "watch": "concurrently \"rbxtsc -w\" \"nodemon --watch out --ext luau --exec 'node node_modules/rbxts-genfeaturetree/genFeatureTree.js'\""
+  },
+  "keywords": [
+    "roblox-ts",
+    "rojo",
+    "rbxts"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.0.0",
+    "nodemon": "^3.0.0"
+  }
+}
